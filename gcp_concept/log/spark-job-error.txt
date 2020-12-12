@@ -1,0 +1,36 @@
+0/08/13 10:48:47 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lguplus-sandbox-on-cloud-poc.EDP_PILOT_SBXL2EO.L1AA_PHCL_MSG_IOCL_S, parameters sent from Spark: requiredColumns=[], filters=[]
+20/08/13 10:48:47 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lguplus-sandbox-on-cloud-poc.EDP_PILOT_SBXL2EO.L1AA_PHCL_MSG_IOCL_S columns=[], filter=''
+[END-SUCCESS] Update row count: 4631823
+p_basis_yyyy-p_basis_mm
+acc :  DataFrame[base_ym: binary, ctn: binary, fact_index_cd: binary, fact_index_nm: binary, base_dow_nm: binary, base_hh: binary, asmp_vsit_tmsc: decimal(38,0), asmp_vsit_tm: decimal(38,1), ttal_pckt_siz: decimal(38,0), avg_asmp_vsit_tmsc: double, avg_asmp_vsit_tm: double, avg_ttal_pckt_siz: double, conn_cnt: bigint, cnc_info_catg_lvl1_cd: binary, cnc_info_catg_lvl2_cd: binary, cnc_info_catg_lvl3_cd: binary, bdp_load_dttm: binary, bdp_load_user_id: binary, p_basis_yyyy: int, p_basis_mm: int]
+xs :  ['base_ym', 'ctn', 'fact_index_cd', 'fact_index_nm', 'base_dow_nm', 'base_hh', 'cnc_info_catg_lvl1_cd', 'cnc_info_catg_lvl2_cd', 'cnc_info_catg_lvl3_cd', 'bdp_load_dttm', 'bdp_load_user_id']
+acc :  DataFrame[base_ym: string, ctn: string, fact_index_cd: string, fact_index_nm: string, base_dow_nm: string, base_hh: string, asmp_vsit_tmsc: decimal(38,0), asmp_vsit_tm: decimal(38,1), ttal_pckt_siz: decimal(38,0), avg_asmp_vsit_tmsc: double, avg_asmp_vsit_tm: double, avg_ttal_pckt_siz: double, conn_cnt: bigint, cnc_info_catg_lvl1_cd: string, cnc_info_catg_lvl2_cd: string, cnc_info_catg_lvl3_cd: string, bdp_load_dttm: string, bdp_load_user_id: string, p_basis_yyyy: int, p_basis_mm: int]
+xs :  ['asmp_vsit_tmsc', 'asmp_vsit_tm', 'ttal_pckt_siz']
+root
+ |-- base_ym: string (nullable = true)
+ |-- ctn: string (nullable = true)
+ |-- fact_index_cd: string (nullable = true)
+ |-- fact_index_nm: string (nullable = true)
+ |-- base_dow_nm: string (nullable = true)
+ |-- base_hh: string (nullable = true)
+ |-- asmp_vsit_tmsc: float (nullable = true)
+ |-- asmp_vsit_tm: float (nullable = true)
+ |-- ttal_pckt_siz: float (nullable = true)
+ |-- avg_asmp_vsit_tmsc: double (nullable = true)
+ |-- avg_asmp_vsit_tm: double (nullable = true)
+ |-- avg_ttal_pckt_siz: double (nullable = true)
+ |-- conn_cnt: long (nullable = true)
+ |-- cnc_info_catg_lvl1_cd: string (nullable = true)
+ |-- cnc_info_catg_lvl2_cd: string (nullable = true)
+ |-- cnc_info_catg_lvl3_cd: string (nullable = true)
+ |-- bdp_load_dttm: string (nullable = true)
+ |-- bdp_load_user_id: string (nullable = true)
+ |-- p_basis_yyyy: integer (nullable = true)
+ |-- p_basis_mm: integer (nullable = true)
+ |-- partition_date: timestamp (nullable = true)
+
+20/08/13 11:02:54 ERROR org.apache.spark.scheduler.cluster.YarnScheduler: Lost executor 10 on import-spark-cluster-tjdrudghks-20200813-w-3.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/13 11:02:54 WARN org.apache.spark.scheduler.cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: Requesting driver to remove executor 10 for reason Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/13 11:02:54 WARN org.apache.spark.scheduler.TaskSetManager: Lost task 312.0 in stage 29.0 (TID 22709, import-spark-cluster-tjdrudghks-20200813-w-3.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal, executor 10): ExecutorLostFailure (executor 10 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/13 11:02:54 WARN org.apache.spark.scheduler.TaskSetManager: Lost task 311.0 in stage 29.0 (TID 22708, import-spark-cluster-tjdrudghks-20200813-w-3.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal, executor 10): ExecutorLostFailure (executor 10 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/13 11:02:54 WARN org.apache.spark.ExecutorAllocationManager: Attempted to mark unknown executor 10 idle

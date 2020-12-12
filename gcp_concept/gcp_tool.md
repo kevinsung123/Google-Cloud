@@ -1,0 +1,62 @@
+﻿### Cloud 개발자 도구
+- 클라우드 기반 애플리케이션을 빠르게 작성,배포, 디버그
+- 모든언어에 걸쳐 SW 빌드 및 CI/CD 표준화
+- 파이프라인 생성, 배포 자동화, 피드백 신속하게 받기
+---
+#### Code
+- Cloud Code
+	- [cloud code reference](https://cloud.google.com/code?hl=ko)
+	- kubernets 애플리케이션 제작,배포,디버그
+	- 클라우드 기반 애플리케이션을 쉽고 빠르게 제작,배포,디버기 도구 포함
+	- Visual Studio Code및 Intellij등 IDE확장 프로그램을 통해 코드를 신속하게 반복하고 디버그하여 Kubernetes로 배포
+- Cloud SDK
+	- [cloud sdk reference](https://cloud.google.com/sdk?hl=ko)
+	- Google Cloud에서 호스팅되는 리소스 및 애플리케이션 관리
+	- gcloud, gstuil 및 bq명령줄 도구를 포함하는 Cloud SDK를 통해 명령줄에서 Compute Engine, Cloud Storage, BigQuery등에 엑세스 가능 
+	- 이러한 도구를 사용하여 자동화 스크립트 사용하여 실행
+- Google Cloud Client Library 
+	- Google Cloud APi에 프로그래매틱 방식으로 엑세스
+	- Google Cloud API호출에 권장되는 라이브러리
+	- 라이브러리는 개발자 환경을 최적화하고 구현 세부정보나 서비스 API개념이 아닌 서비스 메타포를 염두에 두고 작업 할 수 있도록 지원
+- GCP기반 Spring Framework
+	- GCP의 Spring Framework는 가장 인기있는 오픈소스 자바 프레임워크를 Google Cloud 서비스와 통합하여 확장
+---
+#### Build
+- Cloud Build
+	- [cloud build reference](https://cloud.google.com/cloud-build)
+	- continuously build,test and deploy CI/CD
+	- 모든 언어에 걸쳐 SW를 신속하게 빌드할 수있음
+	- VM, Serverless, Kubernetes, Firebase등 다양한 환경에서 빌드, 테스트, 배포하기 위해 커스텀 워크플로를 정의하는 작업을 완전히 제어 가능
+- Tekton
+	- 모든 언어와 도구에 걸쳐 CI/CD 표준화
+	- Tekton은 Kubernetes 기반 오픈소스 프레임워크를 통해 모든 도구에 걸쳐 지속적인 통합과 배포 파이프라인을 표준화
+	- 세부정보를 추상화하여 여러 클라우드 제공업체나 On-Premise시스템에서 빌드, 테스트, 배포가 가능
+	- 여기에는 Jenkins, Skaffold, Knative, Jenkins X에 대한 지원도포함
+- Google Cloud 기반 Jenkins
+	- Jenkins에 필요한 속도, 확장성, 보안을지원
+	- Google Cloud를 통해 Jenkins 빌드 속도를 향상
+	- 기본 Kubernetes지원을 사용해 CI/CD 파이프라인을 쉽게 설정
+	- Compute Engine을 활용해 작업을 원할하게 실행하고 빌드 팜을 확장 가능
+	- 보완과 규정 준수를 JenKins 파이프라인 일부로 통합
+---
+##### Artifacts Management(산출물 관리)
+- Container Registry
+	- Docker 컨테이너 이미지 저장, 관리, 보호
+	- Container Registry를 사용하면 팀이 한곳에서 Docker 이미지 및 아티팩트를 관리하고, 취약성 분석을 수행하고, 사용자 엑세스 권한을 제어
+	- 기존 CI/CD통합을 사용하면 완전히 자동화된 Docker 파이프라인을 설정하여 빠른 피드백 가능
+- Artifcat Registry
+	- 범용 빌드 아티팩트 관리
+	- 차세대 Container Registry인 Artifact Registry는 조직이 컨테이너 임지와 언어패키지(Maven, npm)을 한곳에서 관리할 수 있게 해줌
+	- Google Cloud 도구 및 런타임과 완벽하게 통합도며 네이티브 아티팩트 프로토콜을 기본적으로 지원
+	- CI/CD도구와 간단하게 통합하여 자동화된 파이프라인을 구축 가능
+---
+#### Deploy( 배포)
+- Cloud Build
+	- 배포자동화
+	- 빌드 단계의 일부로 파이프라인을 만들어 배포를 자동화 가능
+	- 내장된 통합 기능을 사용하여 Google Kubernetes Engine(GKE), App Engine, Cloud Functions , Firebase에 배포가능
+	- Spinnaker를 Cloud Build와 함꼐 사용하면 복잡한 파이프라인을 만들고 실행 가능
+- Deployment Manager
+	- 간단한 템플릿을 활용한 클라우드 리소스 생성 및 관리
+	- 이 도구 사용시 애플리케이션에 필요한 모든 리소스를 yaml를 사용한 선언 혀익으로 지정
+	- Python 또는 Jinja2 템플릿을 사용해 구성을 매개변수홯하고 ,부하 분산 및 자동 확장되는 인스턴스 그룹 같은 일반적인 배포 패러당미을 재사용 가능

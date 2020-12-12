@@ -1,0 +1,92 @@
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+com.google.cloud.spark#spark-bigquery-with-dependencies_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-ada5d1f7-ce70-4680-afb1-72b4cc5e6930;1.0
+	confs: [default]
+	found com.google.cloud.spark#spark-bigquery-with-dependencies_2.12;0.15.0-beta in central
+:: resolution report :: resolve 159ms :: artifacts dl 3ms
+	:: modules in use:
+	com.google.cloud.spark#spark-bigquery-with-dependencies_2.12;0.15.0-beta from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-ada5d1f7-ce70-4680-afb1-72b4cc5e6930
+	confs: [default]
+	0 artifacts copied, 1 already retrieved (0kB/6ms)
+20/08/12 16:44:58 INFO org.spark_project.jetty.util.log: Logging initialized @3764ms
+20/08/12 16:44:58 INFO org.spark_project.jetty.server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+20/08/12 16:44:58 INFO org.spark_project.jetty.server.Server: Started @3847ms
+20/08/12 16:44:58 INFO org.spark_project.jetty.server.AbstractConnector: Started ServerConnector@24f30196{HTTP/1.1,[http/1.1]}{0.0.0.0:40641}
+20/08/12 16:44:59 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at import-spark-cluster-tjdrudghks-20200812-m/10.178.0.69:8032
+20/08/12 16:44:59 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at import-spark-cluster-tjdrudghks-20200812-m/10.178.0.69:10200
+20/08/12 16:44:59 INFO org.apache.hadoop.conf.Configuration: resource-types.xml not found
+20/08/12 16:44:59 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Unable to find 'resource-types.xml'.
+20/08/12 16:44:59 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+20/08/12 16:44:59 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Adding resource type - name = vcores, units = , type = COUNTABLE
+20/08/12 16:45:00 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/com.google.cloud.spark_spark-bigquery-with-dependencies_2.12-0.15.0-beta.jar added multiple times to distributed cache.
+20/08/12 16:45:01 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1597250264207_0002
+[['EDP_PILOT_SBXL2FA', 'EQUIPMENT_INFO'], ['EDP_PILOT_SBXL2FA', 'SENSOR_DATA'], ['EDP_PILOT_SBXL2FA', 'WEATHER_SEOUL'], ['EDP_PILOT_SBXL2FA', 'WEATHER_SUWON'], ['EDP_PILOT_SBXL2FA', 'WEATHER_SEOUL_BY_TIME'], ['EDP_PILOT_SBXL2FA', 'WEATHER_SUWON_BY_TIME']]
+['sensor_id', 'location_name', 'state', 'cust_id', 'install_address', 'equip_type', 'equip_model', 'entity_id', 'install_num', 'equip_num', 'equip_enrollment_date', 'equip_install_date', 'latitude', 'longitude']
+[]
+[]
+acc :  DataFrame[sensor_id: binary, location_name: binary, state: binary, cust_id: binary, install_address: binary, equip_type: binary, equip_model: binary, entity_id: binary, install_num: binary, equip_num: binary, equip_enrollment_date: binary, equip_install_date: binary, latitude: binary, longitude: binary]
+xs :  ['sensor_id', 'location_name', 'state', 'cust_id', 'install_address', 'equip_type', 'equip_model', 'entity_id', 'install_num', 'equip_num', 'equip_enrollment_date', 'equip_install_date', 'latitude', 'longitude']
+acc :  DataFrame[sensor_id: string, location_name: string, state: string, cust_id: string, install_address: string, equip_type: string, equip_model: string, entity_id: string, install_num: string, equip_num: string, equip_enrollment_date: string, equip_install_date: string, latitude: string, longitude: string]
+xs :  []
+bq_path :  EDP_PILOT_SBXL2FA.EQUIPMENT_INFO
+query :  SELECT * FROM src_tbl
+DataFrame[sensor_id: string, location_name: string, state: string, cust_id: string, install_address: string, equip_type: string, equip_model: string, entity_id: string, install_num: string, equip_num: string, equip_enrollment_date: string, equip_install_date: string, latitude: string, longitude: string]
+20/08/12 16:45:25 INFO com.google.cloud.spark.bigquery.BigQueryWriteHelper: Submitted load to GenericData{classInfo=[datasetId, projectId, tableId], {datasetId=EDP_PILOT_SBXL2FA, projectId=lguplus-sandbox-on-cloud-poc, tableId=EQUIPMENT_INFO}}. jobId: JobId{project=lguplus-sandbox-on-cloud-poc, job=0e0e7f4c-4614-4c1f-9d32-f0d5becdbd47, location=asia-northeast3}
+Traceback (most recent call last):
+  File "/tmp/run_dataproc_pyspark-tjdrudghks_20200812_c929bb68/edp_import_test.py", line 140, in <module>
+    gcs_to_bq(owner,tbl_name)
+  File "/tmp/run_dataproc_pyspark-tjdrudghks_20200812_c929bb68/edp_import_test.py", line 115, in gcs_to_bq
+    .option("partitionField",to_timestamp(partition)) \
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 737, in save
+  File "/usr/lib/spark/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1257, in __call__
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 63, in deco
+  File "/usr/lib/spark/python/lib/py4j-0.10.7-src.zip/py4j/protocol.py", line 328, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o125.save.
+: java.lang.RuntimeException: Failed to write to BigQuery
+	at com.google.cloud.spark.bigquery.BigQueryWriteHelper.writeDataFrameToBigQuery(BigQueryWriteHelper.scala:79)
+	at com.google.cloud.spark.bigquery.BigQueryInsertableRelation.insert(BigQueryInsertableRelation.scala:42)
+	at com.google.cloud.spark.bigquery.BigQueryRelationProvider.createRelation(BigQueryRelationProvider.scala:86)
+	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:46)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:70)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:68)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.doExecute(commands.scala:86)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:131)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:155)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:152)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:127)
+	at org.apache.spark.sql.execution.QueryExecution.toRdd$lzycompute(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.toRdd(QueryExecution.scala:81)
+	at org.apache.spark.sql.DataFrameWriter.$anonfun$runCommand$1(DataFrameWriter.scala:676)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:80)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:127)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:75)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:676)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:290)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:271)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.google.cloud.spark.bigquery.repackaged.com.google.cloud.bigquery.BigQueryException: Failed to load to lguplus-sandbox-on-cloud-poc.EDP_PILOT_SBXL2FA.EQUIPMENT_INFO in job JobId{project=lguplus-sandbox-on-cloud-poc, job=0e0e7f4c-4614-4c1f-9d32-f0d5becdbd47, location=asia-northeast3}. BigQuery error was The field specified for partitioning cannot be found in the schema.
+	at com.google.cloud.spark.bigquery.BigQueryWriteHelper.loadDataToBigQuery(BigQueryWriteHelper.scala:146)
+	at com.google.cloud.spark.bigquery.BigQueryWriteHelper.writeDataFrameToBigQuery(BigQueryWriteHelper.scala:77)
+	... 31 more
+
+20/08/12 16:45:31 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@24f30196{HTTP/1.1,[http/1.1]}{0.0.0.0:0}

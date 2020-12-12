@@ -1,0 +1,302 @@
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+com.google.cloud.spark#spark-bigquery-with-dependencies_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-0294adaf-0e8d-4cde-ba1a-8a306c963a43;1.0
+	confs: [default]
+	found com.google.cloud.spark#spark-bigquery-with-dependencies_2.12;0.15.0-beta in central
+:: resolution report :: resolve 224ms :: artifacts dl 4ms
+	:: modules in use:
+	com.google.cloud.spark#spark-bigquery-with-dependencies_2.12;0.15.0-beta from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-0294adaf-0e8d-4cde-ba1a-8a306c963a43
+	confs: [default]
+	0 artifacts copied, 1 already retrieved (0kB/6ms)
+20/08/14 11:33:50 INFO org.spark_project.jetty.util.log: Logging initialized @4311ms
+20/08/14 11:33:50 INFO org.spark_project.jetty.server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+20/08/14 11:33:50 INFO org.spark_project.jetty.server.Server: Started @4398ms
+20/08/14 11:33:50 INFO org.spark_project.jetty.server.AbstractConnector: Started ServerConnector@7a47a6f7{HTTP/1.1,[http/1.1]}{0.0.0.0:34229}
+20/08/14 11:33:51 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at import-spark-cluster-tjdrudghks-20200814-m/10.178.0.111:8032
+20/08/14 11:33:51 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at import-spark-cluster-tjdrudghks-20200814-m/10.178.0.111:10200
+20/08/14 11:33:51 INFO org.apache.hadoop.conf.Configuration: resource-types.xml not found
+20/08/14 11:33:51 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Unable to find 'resource-types.xml'.
+20/08/14 11:33:51 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+20/08/14 11:33:51 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Adding resource type - name = vcores, units = , type = COUNTABLE
+20/08/14 11:33:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/com.google.cloud.spark_spark-bigquery-with-dependencies_2.12-0.15.0-beta.jar added multiple times to distributed cache.
+20/08/14 11:33:54 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1597389755399_0004
+20/08/14 11:34:10 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@7a47a6f7{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+List of tables to be trasfered =========================
+['EDP_PILOT_BDPL0NM', 'L0NML_F_RMS_CC_HSD_04D_A']
+
+['EDP_PILOT_BDPL0HI', 'L0HIL_F_HIOT_A_HOMEIOT_PARTNER_LOG']
+
+['EDP_PILOT_BDPL0MC', 'L0MC_F_MCAR_STREAMING_LOG']
+
+['EDP_PILOT_BDPL0MC', 'L0MCT_D_MCAR_TER_INFO']
+
+['EDP_PILOT_BDPL0MC', 'L0MCT_D_MCAR_TER_USER_INFO']
+
+['EDP_PILOT_BDPL0UC', 'L0UCM_TB_EL_DEVC_MSTR']
+
+['EDP_PILOT_BDPL1DA', 'L1DAM_HM_IOT_DEVC_INFO_BAS']
+
+['EDP_PILOT_BDPL1AA', 'L1AAT_HM_ENTR_BAS']
+
+['EDP_PILOT_BDPL0MC', 'L0MCT_D_MCAR_UC_CUSTOMER_INFO']
+
+['EDP_PILOT_BDPL1RA', 'L1RAT_CUST_RSPN_TXN']
+
+['EDP_PILOT_BDPL0UC', 'L0UCM_TB_CC_RSPN_CLSS_LMS_CD']
+
+========================================================
+20/08/14 11:34:11 INFO org.spark_project.jetty.server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+20/08/14 11:34:11 INFO org.spark_project.jetty.server.Server: Started @25067ms
+20/08/14 11:34:11 INFO org.spark_project.jetty.server.AbstractConnector: Started ServerConnector@6cae878a{HTTP/1.1,[http/1.1]}{0.0.0.0:46703}
+20/08/14 11:34:11 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at import-spark-cluster-tjdrudghks-20200814-m/10.178.0.111:8032
+20/08/14 11:34:11 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at import-spark-cluster-tjdrudghks-20200814-m/10.178.0.111:10200
+20/08/14 11:34:11 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/com.google.cloud.spark_spark-bigquery-with-dependencies_2.12-0.15.0-beta.jar added multiple times to distributed cache.
+20/08/14 11:34:11 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1597389755399_0005
+20/08/14 11:34:16 WARN org.apache.spark.scheduler.cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: Attempted to request executors before the AM has registered!
+[START] L0NML_F_RMS_CC_HSD_04D_A==================
+20/08/14 11:34:36 WARN org.apache.spark.sql.execution.datasources.SharedInMemoryCache: Evicting cached table partition metadata from memory due to size constraints (spark.sql.hive.filesourcePartitionFileCacheSize = 262144000 bytes). This may impact query planning performance.
+bq_path success read gsc= EDP_PILOT_BDPL0NM.L0NML_F_RMS_CC_HSD_04D_A
+acc :  DataFrame[firstlogtime: binary, received_time: binary, mac: binary, ap_health_check_type: binary, reason_code: binary, process_code: binary, ap_log: binary, detail_data: binary, reserved_data_01: binary, mday: binary, bdp_load_dttm: timestamp, bdp_load_user_id: binary, p_basis_yyyy: int, p_basis_mm: int, p_basis_dd: int, p_basis_hh: int]
+xs :  ['firstlogtime', 'received_time', 'mac', 'ap_health_check_type', 'reason_code', 'process_code', 'ap_log', 'detail_data', 'reserved_data_01', 'mday', 'bdp_load_user_id']
+acc :  DataFrame[firstlogtime: string, received_time: string, mac: string, ap_health_check_type: string, reason_code: string, process_code: string, ap_log: string, detail_data: string, reserved_data_01: string, mday: string, bdp_load_dttm: timestamp, bdp_load_user_id: string, p_basis_yyyy: int, p_basis_mm: int, p_basis_dd: int, p_basis_hh: int]
+xs :  []
+partitioned df schema=================
+root
+ |-- firstlogtime: string (nullable = true)
+ |-- received_time: string (nullable = true)
+ |-- mac: string (nullable = true)
+ |-- ap_health_check_type: string (nullable = true)
+ |-- reason_code: string (nullable = true)
+ |-- process_code: string (nullable = true)
+ |-- ap_log: string (nullable = true)
+ |-- detail_data: string (nullable = true)
+ |-- reserved_data_01: string (nullable = true)
+ |-- mday: string (nullable = true)
+ |-- bdp_load_dttm: timestamp (nullable = true)
+ |-- bdp_load_user_id: string (nullable = true)
+ |-- p_basis_yyyy: integer (nullable = true)
+ |-- p_basis_mm: integer (nullable = true)
+ |-- p_basis_dd: integer (nullable = true)
+ |-- p_basis_hh: integer (nullable = true)
+ |-- partition_date: timestamp (nullable = true)
+
+partitioned df schema=================
+write to bigquerty started 2020-08-14 11:38:03.252615
+20/08/14 13:25:13 WARN org.apache.spark.scheduler.cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: Requesting driver to remove executor 15 for reason Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:25:13 ERROR org.apache.spark.scheduler.cluster.YarnScheduler: Lost executor 15 on import-spark-cluster-tjdrudghks-20200814-w-6.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:25:13 WARN org.apache.spark.scheduler.TaskSetManager: Lost task 3528.0 in stage 3.0 (TID 7639, import-spark-cluster-tjdrudghks-20200814-w-6.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal, executor 15): ExecutorLostFailure (executor 15 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:25:13 WARN org.apache.spark.scheduler.TaskSetManager: Lost task 3530.0 in stage 3.0 (TID 7641, import-spark-cluster-tjdrudghks-20200814-w-6.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal, executor 15): ExecutorLostFailure (executor 15 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:27:45 WARN org.apache.spark.scheduler.cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: Requesting driver to remove executor 7 for reason Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:27:45 ERROR org.apache.spark.scheduler.cluster.YarnScheduler: Lost executor 7 on import-spark-cluster-tjdrudghks-20200814-w-3.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:27:45 WARN org.apache.spark.scheduler.TaskSetManager: Lost task 3604.0 in stage 3.0 (TID 7717, import-spark-cluster-tjdrudghks-20200814-w-3.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal, executor 7): ExecutorLostFailure (executor 7 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:27:45 WARN org.apache.spark.scheduler.TaskSetManager: Lost task 3624.0 in stage 3.0 (TID 7737, import-spark-cluster-tjdrudghks-20200814-w-3.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal, executor 7): ExecutorLostFailure (executor 7 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:27:45 WARN org.apache.spark.network.server.TransportChannelHandler: Exception in connection from /10.178.0.29:55488
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:377)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+20/08/14 13:30:03 WARN org.apache.spark.scheduler.cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: Requesting driver to remove executor 1 for reason Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:30:03 ERROR org.apache.spark.scheduler.cluster.YarnScheduler: Lost executor 1 on import-spark-cluster-tjdrudghks-20200814-w-4.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:30:03 WARN org.apache.spark.scheduler.TaskSetManager: Lost task 3707.0 in stage 3.0 (TID 7822, import-spark-cluster-tjdrudghks-20200814-w-4.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal, executor 1): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:30:03 WARN org.apache.spark.scheduler.TaskSetManager: Lost task 3724.0 in stage 3.0 (TID 7839, import-spark-cluster-tjdrudghks-20200814-w-4.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal, executor 1): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:30:04 WARN org.apache.spark.network.server.TransportChannelHandler: Exception in connection from /10.178.0.32:33548
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:377)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+20/08/14 13:36:10 ERROR org.apache.spark.scheduler.cluster.YarnScheduler: Lost executor 10 on import-spark-cluster-tjdrudghks-20200814-w-5.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:36:10 WARN org.apache.spark.scheduler.cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: Requesting driver to remove executor 10 for reason Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:36:10 WARN org.apache.spark.scheduler.TaskSetManager: Lost task 4026.0 in stage 3.0 (TID 8143, import-spark-cluster-tjdrudghks-20200814-w-5.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal, executor 10): ExecutorLostFailure (executor 10 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:36:10 WARN org.apache.spark.scheduler.TaskSetManager: Lost task 4002.0 in stage 3.0 (TID 8119, import-spark-cluster-tjdrudghks-20200814-w-5.asia-northeast3-a.c.lguplus-sandbox-on-cloud-poc.internal, executor 10): ExecutorLostFailure (executor 10 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  6.0 GB of 6 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+20/08/14 13:37:55 INFO com.google.cloud.spark.bigquery.BigQueryWriteHelper: Submitted load to GenericData{classInfo=[datasetId, projectId, tableId], {datasetId=EDP_PILOT_BDPL0NM, projectId=lguplus-sandbox-on-cloud-poc, tableId=L0NML_F_RMS_CC_HSD_04D_A}}. jobId: JobId{project=lguplus-sandbox-on-cloud-poc, job=86f54764-f805-49ae-9ecd-fe7022ec4b0b, location=asia-northeast3}
+20/08/14 14:08:53 INFO com.google.cloud.spark.bigquery.BigQueryWriteHelper: Done loading to lguplus-sandbox-on-cloud-poc.EDP_PILOT_BDPL0NM.L0NML_F_RMS_CC_HSD_04D_A. jobId: JobId{project=lguplus-sandbox-on-cloud-poc, job=86f54764-f805-49ae-9ecd-fe7022ec4b0b, location=asia-northeast3}
+Ended bigquery writing 2020-08-14 14:09:06.659012
+elapsed : 2:31:03.406397
+20/08/14 14:09:07 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Querying table lguplus-sandbox-on-cloud-poc.EDP_PILOT_BDPL0NM.L0NML_F_RMS_CC_HSD_04D_A, parameters sent from Spark: requiredColumns=[], filters=[]
+20/08/14 14:09:07 INFO com.google.cloud.spark.bigquery.direct.DirectBigQueryRelation: Going to read from lguplus-sandbox-on-cloud-poc.EDP_PILOT_BDPL0NM.L0NML_F_RMS_CC_HSD_04D_A columns=[], filter=''
+[END-SUCCESS] Update row count: 24764261034
+[END] L0NML_F_RMS_CC_HSD_04D_A==================
+20/08/14 14:20:18 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@6cae878a{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+20/08/14 14:20:19 INFO org.spark_project.jetty.server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+20/08/14 14:20:19 INFO org.spark_project.jetty.server.Server: Started @9992871ms
+20/08/14 14:20:19 INFO org.spark_project.jetty.server.AbstractConnector: Started ServerConnector@21cbe06b{HTTP/1.1,[http/1.1]}{0.0.0.0:33727}
+20/08/14 14:20:19 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at import-spark-cluster-tjdrudghks-20200814-m/10.178.0.111:8032
+20/08/14 14:20:19 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at import-spark-cluster-tjdrudghks-20200814-m/10.178.0.111:10200
+20/08/14 14:20:19 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/com.google.cloud.spark_spark-bigquery-with-dependencies_2.12-0.15.0-beta.jar added multiple times to distributed cache.
+20/08/14 14:20:19 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1597389755399_0006
+[START] L0HIL_F_HIOT_A_HOMEIOT_PARTNER_LOG==================
+bq_path success read gsc= EDP_PILOT_BDPL0HI.L0HIL_F_HIOT_A_HOMEIOT_PARTNER_LOG
+20/08/14 14:30:41 WARN org.apache.spark.util.Utils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+acc :  DataFrame[seq_id: binary, log_time: binary, log_type: binary, sid: binary, ik_sid: binary, result_code: binary, req_time: binary, rsp_time: binary, client_ip: binary, dev_info: binary, os_info: binary, nw_info: binary, svc_name: binary, dev_model: binary, carrier_type: binary, log_key: binary, session_id: binary, svc_class: binary, dev_class: binary, vendor_code: binary, pos_req_time: binary, pos_res_time: binary, device_id: binary, ik_device_id: binary, one_id: binary, ik_one_id: binary, channel: binary, api_ver: binary, comm_code_key: binary, comm_code_val: binary, session_key: binary, r1: binary, r2: binary, r3: binary, r4: binary, r5: binary, r6: binary, r7: binary, r8: binary, r9: binary, r10: binary, bdp_load_dttm: timestamp, bdp_load_user_id: binary, p_basis_yyyy: int, p_basis_mm: int, p_basis_dd: int, p_basis_svr_no: int]
+xs :  ['seq_id', 'log_time', 'log_type', 'sid', 'ik_sid', 'result_code', 'req_time', 'rsp_time', 'client_ip', 'dev_info', 'os_info', 'nw_info', 'svc_name', 'dev_model', 'carrier_type', 'log_key', 'session_id', 'svc_class', 'dev_class', 'vendor_code', 'pos_req_time', 'pos_res_time', 'device_id', 'ik_device_id', 'one_id', 'ik_one_id', 'channel', 'api_ver', 'comm_code_key', 'comm_code_val', 'session_key', 'r1', 'r2', 'r3', 'r4', 'r5', 'r6', 'r7', 'r8', 'r9', 'r10', 'bdp_load_user_id']
+acc :  DataFrame[seq_id: string, log_time: string, log_type: string, sid: string, ik_sid: string, result_code: string, req_time: string, rsp_time: string, client_ip: string, dev_info: string, os_info: string, nw_info: string, svc_name: string, dev_model: string, carrier_type: string, log_key: string, session_id: string, svc_class: string, dev_class: string, vendor_code: string, pos_req_time: string, pos_res_time: string, device_id: string, ik_device_id: string, one_id: string, ik_one_id: string, channel: string, api_ver: string, comm_code_key: string, comm_code_val: string, session_key: string, r1: string, r2: string, r3: string, r4: string, r5: string, r6: string, r7: string, r8: string, r9: string, r10: string, bdp_load_dttm: timestamp, bdp_load_user_id: string, p_basis_yyyy: int, p_basis_mm: int, p_basis_dd: int, p_basis_svr_no: int]
+xs :  []
+partitioned df schema=================
+root
+ |-- seq_id: string (nullable = true)
+ |-- log_time: string (nullable = true)
+ |-- log_type: string (nullable = true)
+ |-- sid: string (nullable = true)
+ |-- ik_sid: string (nullable = true)
+ |-- result_code: string (nullable = true)
+ |-- req_time: string (nullable = true)
+ |-- rsp_time: string (nullable = true)
+ |-- client_ip: string (nullable = true)
+ |-- dev_info: string (nullable = true)
+ |-- os_info: string (nullable = true)
+ |-- nw_info: string (nullable = true)
+ |-- svc_name: string (nullable = true)
+ |-- dev_model: string (nullable = true)
+ |-- carrier_type: string (nullable = true)
+ |-- log_key: string (nullable = true)
+ |-- session_id: string (nullable = true)
+ |-- svc_class: string (nullable = true)
+ |-- dev_class: string (nullable = true)
+ |-- vendor_code: string (nullable = true)
+ |-- pos_req_time: string (nullable = true)
+ |-- pos_res_time: string (nullable = true)
+ |-- device_id: string (nullable = true)
+ |-- ik_device_id: string (nullable = true)
+ |-- one_id: string (nullable = true)
+ |-- ik_one_id: string (nullable = true)
+ |-- channel: string (nullable = true)
+ |-- api_ver: string (nullable = true)
+ |-- comm_code_key: string (nullable = true)
+ |-- comm_code_val: string (nullable = true)
+ |-- session_key: string (nullable = true)
+ |-- r1: string (nullable = true)
+ |-- r2: string (nullable = true)
+ |-- r3: string (nullable = true)
+ |-- r4: string (nullable = true)
+ |-- r5: string (nullable = true)
+ |-- r6: string (nullable = true)
+ |-- r7: string (nullable = true)
+ |-- r8: string (nullable = true)
+ |-- r9: string (nullable = true)
+ |-- r10: string (nullable = true)
+ |-- bdp_load_dttm: timestamp (nullable = true)
+ |-- bdp_load_user_id: string (nullable = true)
+ |-- p_basis_yyyy: integer (nullable = true)
+ |-- p_basis_mm: integer (nullable = true)
+ |-- p_basis_dd: integer (nullable = true)
+ |-- p_basis_svr_no: integer (nullable = true)
+ |-- partition_date: timestamp (nullable = true)
+
+partitioned df schema=================
+write to bigquerty started 2020-08-14 14:50:21.337809
+Traceback (most recent call last):
+  File "/tmp/run_dataproc_pyspark-tjdrudghks_20200814_4f7a05d1/pipeline_to_bq.py", line 167, in <module>
+    gcs_to_bq(owner,tbl_name,spark)
+  File "/tmp/run_dataproc_pyspark-tjdrudghks_20200814_4f7a05d1/pipeline_to_bq.py", line 132, in gcs_to_bq
+    .option("partitionField",'partition_date') \
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 737, in save
+  File "/usr/lib/spark/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1257, in __call__
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 63, in deco
+  File "/usr/lib/spark/python/lib/py4j-0.10.7-src.zip/py4j/protocol.py", line 328, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o408.save.
+: java.lang.RuntimeException: Failed to write to BigQuery
+	at com.google.cloud.spark.bigquery.BigQueryWriteHelper.writeDataFrameToBigQuery(BigQueryWriteHelper.scala:79)
+	at com.google.cloud.spark.bigquery.BigQueryInsertableRelation.insert(BigQueryInsertableRelation.scala:42)
+	at com.google.cloud.spark.bigquery.BigQueryRelationProvider.createRelation(BigQueryRelationProvider.scala:86)
+	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:46)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:70)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:68)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.doExecute(commands.scala:86)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:131)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:155)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:152)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:127)
+	at org.apache.spark.sql.execution.QueryExecution.toRdd$lzycompute(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.toRdd(QueryExecution.scala:81)
+	at org.apache.spark.sql.DataFrameWriter.$anonfun$runCommand$1(DataFrameWriter.scala:677)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:80)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:127)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:75)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:677)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:291)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:272)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.google.cloud.spark.bigquery.repackaged.com.google.cloud.bigquery.BigQueryException: Too many sources provided: 12165. Limit is 10000.
+	at com.google.cloud.spark.bigquery.repackaged.com.google.cloud.bigquery.spi.v2.HttpBigQueryRpc.translate(HttpBigQueryRpc.java:106)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.cloud.bigquery.spi.v2.HttpBigQueryRpc.create(HttpBigQueryRpc.java:206)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.cloud.bigquery.BigQueryImpl$5.call(BigQueryImpl.java:324)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.cloud.bigquery.BigQueryImpl$5.call(BigQueryImpl.java:321)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.api.gax.retrying.DirectRetryingExecutor.submit(DirectRetryingExecutor.java:105)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.cloud.RetryHelper.run(RetryHelper.java:76)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.cloud.RetryHelper.runWithRetries(RetryHelper.java:50)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.cloud.bigquery.BigQueryImpl.create(BigQueryImpl.java:320)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.cloud.bigquery.BigQueryImpl.create(BigQueryImpl.java:295)
+	at com.google.cloud.spark.bigquery.BigQueryWriteHelper.loadDataToBigQuery(BigQueryWriteHelper.scala:136)
+	at com.google.cloud.spark.bigquery.BigQueryWriteHelper.writeDataFrameToBigQuery(BigQueryWriteHelper.scala:77)
+	... 31 more
+Caused by: com.google.cloud.spark.bigquery.repackaged.com.google.api.client.googleapis.json.GoogleJsonResponseException: 400 Bad Request
+{
+  "code" : 400,
+  "errors" : [ {
+    "domain" : "global",
+    "message" : "Too many sources provided: 12165. Limit is 10000.",
+    "reason" : "invalid"
+  } ],
+  "message" : "Too many sources provided: 12165. Limit is 10000.",
+  "status" : "INVALID_ARGUMENT"
+}
+	at com.google.cloud.spark.bigquery.repackaged.com.google.api.client.googleapis.json.GoogleJsonResponseException.from(GoogleJsonResponseException.java:150)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.api.client.googleapis.services.json.AbstractGoogleJsonClientRequest.newExceptionOnError(AbstractGoogleJsonClientRequest.java:113)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.api.client.googleapis.services.json.AbstractGoogleJsonClientRequest.newExceptionOnError(AbstractGoogleJsonClientRequest.java:40)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.api.client.googleapis.services.AbstractGoogleClientRequest$1.interceptResponse(AbstractGoogleClientRequest.java:444)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.api.client.http.HttpRequest.execute(HttpRequest.java:1108)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.api.client.googleapis.services.AbstractGoogleClientRequest.executeUnparsed(AbstractGoogleClientRequest.java:542)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.api.client.googleapis.services.AbstractGoogleClientRequest.executeUnparsed(AbstractGoogleClientRequest.java:475)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.api.client.googleapis.services.AbstractGoogleClientRequest.execute(AbstractGoogleClientRequest.java:592)
+	at com.google.cloud.spark.bigquery.repackaged.com.google.cloud.bigquery.spi.v2.HttpBigQueryRpc.create(HttpBigQueryRpc.java:204)
+	... 40 more
+
+20/08/14 15:35:08 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@21cbe06b{HTTP/1.1,[http/1.1]}{0.0.0.0:0}

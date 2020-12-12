@@ -1,0 +1,4 @@
+gcloud dataproc jobs list --region asia-norheast3
+gcloud dataproc jobs wait run_dataproc_pyspark-tjdrudghks_20200813_a0c6a5ae --project lguplus-sandbox-on-cloud-poc --region asia-northeast3
+gcloud dataproc jobs kill run_dataproc_pyspark-tjdrudghks_20200813_a0c6a5ae --project lguplus-sandbox-on-cloud-poc --region asia-northeast3
+gcloud dataproc jobs describe run_dataproc_pyspark-tjdrudghks_20200813_a0c6a5ae --project lguplus-sandbox-on-cloud-poc --region asia-northeast3

@@ -1,0 +1,5 @@
+[START] L0HIL_F_HIOT_A_HOMEIOT_PARTNER_LOG: 1/28(3.57%)==================
+20/08/17 05:46:25 WARN org.apache.spark.sql.execution.datasources.SharedInMemoryCache: Evicting cached table partition metadata from memory due to size constraints (spark.sql.hive.filesourcePartitionFileCacheSize = 262144000 bytes). This may impact query planning performance.
+20/08/17 05:46:35 WARN org.apache.spark.util.Utils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+seq_id binary
+log_time binary
